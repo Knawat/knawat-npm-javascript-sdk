@@ -1,6 +1,6 @@
 {
   "name": "@knawat/mp",
-  "version": "1.6.6",
+  "version": "1.7.0",
   "description": "A Node.js package for the Knawat Dropshipping MP REST API",
   "module": "dist/mp.esm.js",
   "unpkg": "dist/mp.js",
