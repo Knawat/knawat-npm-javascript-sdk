@@ -44,4 +44,14 @@ export default {
       auth: 'basic',
     });
   },
+
+  /**
+   * Enable subscription Recurring
+   * @param {String} id
+   */
+  enableSubscriptionRecurring(id) {
+    return this.$fetch('PUT', `/subscription/enableRecurring/${id}`, {
+      auth: 'basic',
+    });
+  }
 };
