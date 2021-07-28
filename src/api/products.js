@@ -8,7 +8,7 @@ export default {
    */
   getProductsByVariationSku(skus) {
     return this.$fetch('GET', '/products/variation', {
-      auth: 'basic',
+      auth: 'token',
       queryParams: { skus },
     });
   },
@@ -22,7 +22,7 @@ export default {
    */
   getProductBySku(sku, queryParams) {
     return this.$fetch('GET', `/products/${sku}`, {
-      auth: 'basic',
+      auth: 'token',
       queryParams,
     });
   },
