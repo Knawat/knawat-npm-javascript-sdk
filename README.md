@@ -29,12 +29,12 @@ A Node.js package for Knawat Dropshipping Merchants REST API. Easily interact wi
 ```
 npm install @knawat/mp --save
 
-yarn add @kanwat/mp
+yarn add @knawat/mp
 ```
 
 ## Getting started
 
-Check out the Knawat Dropshipping MP REST API endpoints and data that can be manipulated in  [our documentations](https://mp.knawat.io).
+Check out the Knawat Dropshipping MP REST API endpoints and data that can be manipulated in [our documentations](https://mp.knawat.io).
 
 ## Setup
 
@@ -69,14 +69,14 @@ const mp = new MP({
 
 ## Library Methods
 
-
 ### Products Functions
 
 All the functions mentioned here return a promise and it's an async function.
 
 What's mentioned between `[brackets]` are the authentication method used for the functions.
 
-Example 
+Example
+
 ```JavaScript
 mp.getProducts() // return a promise.
 ```
@@ -146,19 +146,19 @@ mp.getProducts() // return a promise.
   - **updateTaxRecord(id, tax)**
   - **getTaxById(id)**
   - **deleteTaxRecord(id)**
-- (Dev)Zones `[Basic]` 
-  -  **listZones()**
-  -  **getZoneByID(id)**
-  -  **getZoneByDomain(domain)**
-  -  **updateZoneByID(id,[params])**
-  -  **createZone(zone)**
+- (Dev)Zones `[Basic]`
+  - **listZones()**
+  - **getZoneByID(id)**
+  - **getZoneByDomain(domain)**
+  - **updateZoneByID(id,[params])**
+  - **createZone(zone)**
 
 Note: the methods with the Dev tag is still underdevelopment.
 
 ### REST Function
 
-This function is used internally as a warpper for the library.
-An Async function that requests Data from server. 
+This function is used internally as a wrapper for the library.
+An Async function that requests Data from server.
 
 | Params    | Type     | Description                                                                  |
 | --------- | -------- | ---------------------------------------------------------------------------- |
@@ -167,26 +167,25 @@ An Async function that requests Data from server.
 | `options` | `Object` | options { queryParams, auth, body, headers }                                 |
 
 ```javascript
-mp.$fetch(method, path,options={});
+mp.$fetch(method, path, (options = {}));
 ```
 
-Example: 
+Example:
+
 ```javascript
 mp.$fetch('GET', '/catalog/categories', { auth: 'token' }); // returns object : count and categories array
-
 ```
 
-## postman and bearer token. 
+## postman and bearer token.
 
-If you want to test the API on the postman you can get the bearer token by using this following mettohds: 
+If you want to test the API on the postman you can get the bearer token by using this following methods:
 
 ```javascript
- mp.getTokenAuth() // Async function
- mp.getToeknAuth().then(console.log)
+mp.getTokenAuth(); // Async function
+mp.getTokenAuth().then(console.log);
 ```
 
 After that you can use the available methods to test and see the results you got!.
-
 
 ## Reporting Security Issues
 
