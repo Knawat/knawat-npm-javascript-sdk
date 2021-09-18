@@ -3,6 +3,7 @@
 <!-- Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change. -->
 
 ### :dart: Relevant issues
+
 <!-- Please add relevant opened issues -->
 
 ### :gem: Type of change
@@ -15,9 +16,10 @@
 - [ ] This change requires a documentation update
 
 ### :scroll: Example code
+
 ```js
 
-``` 
+```
 
 ## :vertical_traffic_light: How Has This Been Tested?
 

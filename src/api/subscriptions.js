@@ -53,5 +53,5 @@ export default {
     return this.$fetch('PUT', `/subscription/enableRecurring/${id}`, {
       auth: 'basic',
     });
-  }
+  },
 };
