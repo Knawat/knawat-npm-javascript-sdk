@@ -13,7 +13,8 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "prettier": "prettier --write --ignore-unknown ."
+    "prettier": "prettier --write --ignore-unknown .",
+    "prepare": "husky install"
   },
   "repository": "github:knawat/Knawat-NPM-JavaScript-SDK",
   "keywords": [
@@ -44,7 +45,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "filesize": "^6.4.0",
     "gzip-size": "^5.1.1",
+    "husky": "^7.0.2",
     "jest": "^26.6.3",
+    "lint-staged": "^11.1.2",
     "path": "^0.12.7",
     "prettier": "^2.4.1",
     "rollup": "^2.56.3",
@@ -54,5 +57,9 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-resolve": "0.0.1-predev.1",
     "uglify-js": "^3.14.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
